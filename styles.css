@@ -1,0 +1,9 @@
+#btn-translate {
+    display: block;
+    background-color: red;
+}
+
+#output {
+    border: 1px solid black;
+    min-height: 100px;
+}
