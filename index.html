@@ -4,14 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Groot Translate</title>
+    <link rel="icon" href="./icons/grootbwn.svg" type="image/x-icon" />
     <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <textarea id="input"></textarea>
-    <button id="btn-translate">Translate</button>
-    <div id="output"></div>
+    <nav class="navbar centered-container round-nav">
+        <div>GROOT TRANSLATE</div>
+    </nav>
+    <div class="centered-container main-container">
+        <textarea id="input" class="box-size set-margin" placeholder="Enter Text and Press Translate"></textarea>
+        <button id="btn-translate" class="border">
+            TRANSLATE
+        </button>
+        <div id="output" class="box-size set-margin">Translation</div>
+    </div>
+    <footer class="centered-container footer round-footer"></footer>
     <script src="app.js"></script>
 </body>
 

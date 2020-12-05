@@ -2,7 +2,8 @@ let btnTrnslate = document.querySelector('#btn-translate');
 let inputText = document.querySelector('#input');
 let outputText = document.querySelector('#output');
 btnTrnslate.addEventListener('click', function(){
-    getData(inputText);
+    let input = inputText.value;
+    getData(input);
 })
 function constructURL(text){
     return "https://api.funtranslations.com/translate/groot.json?text=" + text;

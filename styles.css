@@ -1,9 +1,118 @@
-#btn-translate {
-    display: block;
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@600&display=swap');
+:root {
+    --primary-color: #292325;
+    --secondary-color: #f9e0ae;
+    --primary-box-color: #D1D5DB;
+    --btn-color: #C2733A;
+    --ternary-color: whitesmoke;
 }
 
-#output {
-    border: 1px solid black;
+/* * {
+    box-sizing: border-box;
+} */
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--secondary-color);
+    background-image: url('./icons/backgroot.png');
+    
+}
+
+/* container */
+.centered-container {
+    max-width: 800px;
+    padding: 1rem;
+    margin: auto;
+}
+
+.main-container {
+    text-align: center;
+    /* background-color: var(--secondary-color);
+    background-image: url('./icons/backgroot.png'); */
+}
+
+/* navbar */
+.navbar {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--ternary-color);
+    font-weight: 900;
+}
+
+.box-size {
+    width: 100%;
     min-height: 100px;
+}
+
+/* input box */
+
+#input {
+    display: block;
+    border: 0;
+    background-color: var(--primary-box-color);
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    padding:0.5rem;
+    box-sizing: border-box;
+}
+
+/* translate button */
+#btn-translate {
+    padding: 0.7rem 3rem;
+    background-color: var(--btn-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--ternary-color);
+    font-weight: bold;
+    margin: auto;
+    border: 2px solid var(--secondary-color);
+    font-size: 1rem;
+}
+
+.btn-icon {
+    display: inline;
+    width: 2rem;
+}
+
+/* roundness */
+.round-nav {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.round-footer {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+/* margin */
+.set-margin {
+    margin: 4rem 0;
+}
+
+/* border */
+.border {
+    border: 0;
+    border-radius: 1rem;
+}
+
+/* output box */
+#output {
+    padding: 0.5rem;
+    text-align: left;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    /* margin-bottom: 6rem; */
+    box-sizing: border-box;
+}
+
+/* footer */
+.footer {
+    justify-self: end;
+    padding: 0.5rem;
+    min-height: 70px;
+    background-color: var(--primary-color);
 }
