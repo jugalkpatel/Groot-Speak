@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@600&display=swap");
+:root {
+  --primary-color: #292325;
+  --secondary-color: #f9e0ae;
+  --primary-box-color: #d1d5db;
+  --btn-color: #c2733a;
+  --ternary-color: whitesmoke;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  background-image: url(./icons/backgroot.png);
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  width: 70vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--ternary-color);
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+}
+
+#input {
+  border: 0;
+  background-color: var(--primary-box-color);
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+#btn-translate {
+  padding: 0.7rem 3rem;
+  background-color: var(--btn-color);
+  font-family: "Inter", sans-serif;
+  color: var(--ternary-color);
+  font-weight: bold;
+  margin: 3rem;
+  border: 2px solid var(--secondary-color);
+  font-size: 1rem;
+}
+
+#output {
+  padding: 0.5rem;
+  text-align: left;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+
+
+.box-size {
+  display: block;
+  width:100%;
+  min-height: 100px;
+}
+
+.footer {
+  padding: 0 1rem;
+  min-height: 70px;
+  background-color: var(--primary-color);
+}
+
+.set-margin {
+    margin: 1rem 0;
+}
+
+/* roundness */
+.round-nav {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.round-footer {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+@media all and (max-width: 800px) {
+    .wrapper {
+        width: 100vw;
+    }
+}

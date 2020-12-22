@@ -7,12 +7,15 @@
     --ternary-color: whitesmoke;
 }
 
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 
 body {
+    display: flex;
+    justify-content:center;
+    /* height: 100vh; */
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -21,15 +24,23 @@ body {
     
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    justify-content: space-between;
+}
+
 /* container */
 .centered-container {
-    max-width: 800px;
-    padding: 1rem;
-    margin: auto;
+    /* max-width: 800px;
+    padding: 1rem; */
+    /* margin: auto; */
 }
 
 .main-container {
     text-align: center;
+    /* margin-bottom: 5rem; */
     /* background-color: var(--secondary-color);
     background-image: url('./icons/backgroot.png'); */
 }
@@ -40,6 +51,7 @@ body {
     background-color: var(--primary-color);
     color: var(--ternary-color);
     font-weight: 900;
+    padding: 1rem;
 }
 
 .box-size {
@@ -56,7 +68,6 @@ body {
     color: var(--primary-color);
     font-size: 1.3rem;
     padding:0.5rem;
-    box-sizing: border-box;
 }
 
 /* translate button */
@@ -90,7 +101,7 @@ body {
 
 /* margin */
 .set-margin {
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 /* border */
@@ -110,9 +121,9 @@ body {
 }
 
 /* footer */
-.footer {
-    justify-self: end;
-    padding: 0.5rem;
+.footer {   
+    /* margin-top: 11rem; */
+    padding: 0 1rem;
     min-height: 70px;
     background-color: var(--primary-color);
 }
